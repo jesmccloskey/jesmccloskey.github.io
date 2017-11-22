@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="">
+  <link rel="canonical" href="https://jesmccloskey.github.io/post/2015-07-23-r-rmarkdown/">
 
   
 
-  <title>404 Page not found | Jessica A. McCloskey</title>
+  <title>Hello R Markdown | Jessica A. McCloskey</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -144,54 +144,137 @@
   </div>
 </nav>
 
-<div class="container">
 
-  <h1>Page not found</h1>
-  <p>Maybe you were looking for one of these?</p>
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
-  <h2>Recent Posts</h2>
-  
-  <ul>
-    <li><a href="https://jesmccloskey.github.io/post/">Posts</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="https://jesmccloskey.github.io/post/getting-started/">Getting started with the Academic framework for Hugo</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="https://jesmccloskey.github.io/post/widgets/">Customizing the homepage with widgets</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="https://jesmccloskey.github.io/post/managing-content/">Managing content</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="https://jesmccloskey.github.io/post/writing-markdown-latex/">Writing content with Markdown, LaTeX, and Shortcodes</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="https://jesmccloskey.github.io/post/2015-07-23-r-rmarkdown/">Hello R Markdown</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="https://jesmccloskey.github.io/post/migrate-from-jekyll/">Migrate from Jekyll to Hugo</a></li>
-  </ul>
   
 
-  <h2>Recent Publications</h2>
+
+  <div class="article-container">
+    <h1 itemprop="name">Hello R Markdown</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2015-07-23 21:13:14 -0500 CDT" itemprop="datePublished">
+      
+    </time>
+  </span>
+
   
-  <ul>
-    <li><a href="https://jesmccloskey.github.io/publication/ks-tax/">The Kansas Tax Experiment: Impacts of 2012 Kansas Tax Reform on Employment, Establishments, and Output</a></li>
-  </ul>
+
   
-  <ul>
-    <li><a href="https://jesmccloskey.github.io/publication/">Publications</a></li>
-  </ul>
+  
+  
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/categories/r">R</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/r-markdown">R Markdown</a
+    >, 
+    
+    <a href="/tags/plot">plot</a
+    >, 
+    
+    <a href="/tags/regression">regression</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+
   
 
 </div>
+
+    <div class="article-style" itemprop="articleBody">
+      <div id="r-markdown" class="section level1">
+<h1>R Markdown</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>You can embed an R code chunk like this:</p>
+<pre class="r"><code>summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932</code></pre>
+</div>
+<div id="including-plots" class="section level1">
+<h1>Including Plots</h1>
+<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
+<pre class="r"><code>par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
+  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
+  init.angle = -50, border = NA
+)</code></pre>
+<div class="figure"><span id="fig:pie"></span>
+<img src="/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
+<p class="caption">
+Figure 1: A fancy pie chart.
+</p>
+</div>
+</div>
+
+    </div>
+  </div>
+
+</article>
+
+
+
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="https://jesmccloskey.github.io/post/migrate-from-jekyll/"><span
+      aria-hidden="true">&larr;</span> Migrate from Jekyll to Hugo</a></li>
+    
+
+    
+    <li class="next"><a href="https://jesmccloskey.github.io/post/writing-markdown-latex/">Writing content with Markdown, LaTeX, and Shortcodes <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+
+</div>
+
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">
